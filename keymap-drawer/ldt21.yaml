@@ -31,7 +31,7 @@ layers:
   - ','
   - .
   - {t: /, h: LEFT SHIFT}
-  - LEFT GUI
+  - RIGHT GUI
   - {t: BACKSPACE, h: LDT_}
   - {t: TAB, h: Number}
   - {t: ENTER, h: '5'}
