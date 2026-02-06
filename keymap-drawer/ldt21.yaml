@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - ;
+  - {t: ;, h: RCTRL}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
