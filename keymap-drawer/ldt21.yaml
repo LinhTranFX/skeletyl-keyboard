@@ -13,7 +13,7 @@ layers:
   - P
   - A
   - S
-  - D
+  - {t: D, h: LCTRL}
   - F
   - G
   - H
@@ -22,7 +22,7 @@ layers:
   - L
   - ;
   - {t: Z, h: LEFT SHIFT}
-  - {t: X, h: LCTRL}
+  - X
   - C
   - V
   - B
