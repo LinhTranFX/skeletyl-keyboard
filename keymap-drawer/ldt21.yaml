@@ -31,9 +31,9 @@ layers:
   - ','
   - .
   - {t: /, h: LEFT SHIFT}
-  - {t: ENTER, h: Number}
-  - {t: BACKSPACE, h: LDT_}
   - {t: TAB, h: LEFT GUI}
+  - {t: BACKSPACE, h: LDT_}
+  - {t: ENTER, h: Number}
   - {t: ENTER, h: '5'}
   - SPACE
   - {t: RIGHT GUI, h: '4'}
@@ -105,9 +105,9 @@ layers:
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
   - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&mkp LCLK'
   - '&mkp RCLK'
   - '&mkp MCLK'
