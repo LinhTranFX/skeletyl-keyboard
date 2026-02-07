@@ -13,6 +13,7 @@
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <RIGHT_KEYS THUMBS>;  // cho hml (thay bằng define sau)
+hold-trigger-key-positions = <HML_TRIGGER>;
         };
 
         hmr: homerow_mod_right {
