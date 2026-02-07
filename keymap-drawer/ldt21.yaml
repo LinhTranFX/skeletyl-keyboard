@@ -11,10 +11,10 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - {t: D, h: LCTRL}
-  - F
+  - '&hml LGUI A'
+  - '&hml LALT S'
+  - '&hml LCTRL D'
+  - '&hml LSHFT F'
   - G
   - H
   - J
