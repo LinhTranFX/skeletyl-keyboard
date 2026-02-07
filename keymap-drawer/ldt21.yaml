@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: ldt21}
 layers:
   LDT:
-  - Q
+  - {t: Q, h: LEFT ALT}
   - W
   - E
   - R
@@ -14,7 +14,7 @@ layers:
   - A
   - S
   - {t: D, h: LCTRL}
-  - {t: F, h: LEFT ALT}
+  - F
   - G
   - H
   - J
