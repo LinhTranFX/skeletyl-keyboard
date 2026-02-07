@@ -1,16 +1,18 @@
 / {
     behaviors {
+        compatible = "zmk,behavior-hold-tap";
+
         hml: homerow_mod_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MOD_LEFT";
             #binding-cells = <2>;
-            flavor = "balanced";  // "permissive" nếu hold khó trigger hơn
+            flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <HML_TRIGGER>;  // cho hml
+            hold-trigger-key-positions = <RIGHT_KEYS THUMBS>;  // cho hml (thay bằng define sau)
         };
 
         hmr: homerow_mod_right {
