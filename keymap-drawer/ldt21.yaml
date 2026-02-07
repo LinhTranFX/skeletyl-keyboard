@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: ldt21}
 layers:
   LDT:
-  - {t: Q, h: LEFT ALT}
+  - Q
   - W
   - E
   - R
@@ -14,7 +14,7 @@ layers:
   - A
   - S
   - {t: D, h: LCTRL}
-  - F
+  - {t: F, h: LEFT ALT}
   - G
   - H
   - J
@@ -43,15 +43,15 @@ layers:
   - ''
   - ''
   - ''
-  - REDO
-  - PASTE
-  - Ctl+COPY
-  - CUT
-  - UNDO
+  - AC REDO
+  - AC PASTE
+  - Ctl+AC COPY
+  - AC CUT
+  - AC UNDO
   - ''
   - ''
-  - ''
-  - ''
+  - LCTRL
+  - LEFT ALT
   - ''
   - CAPS
   - LEFT ARROW
@@ -128,8 +128,8 @@ layers:
   - '6'
   - '='
   - ''
-  - ''
-  - ''
+  - RIGHT ALT
+  - RCTRL
   - ''
   - ''
   - '`'
@@ -159,7 +159,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''''
+  - Sft+"
   - $
   - '%'
   - ^
