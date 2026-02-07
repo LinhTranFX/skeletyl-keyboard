@@ -1,0 +1,27 @@
+/ {
+    behaviors {
+        hml: homerow_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD_LEFT";
+            #binding-cells = <2>;
+            flavor = "balanced";  // "permissive" nếu hold khó trigger hơn
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+        };
+
+        hmr: homerow_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MOD_RIGHT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
