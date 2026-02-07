@@ -10,6 +10,7 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <HML_TRIGGER>;  // cho hml
         };
 
         hmr: homerow_mod_right {
@@ -22,6 +23,7 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <HMR_TRIGGER>;  // cho hmr
         };
     };
 };
