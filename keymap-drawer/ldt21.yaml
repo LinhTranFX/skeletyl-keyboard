@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: ldt21}
 layers:
   LDT:
-  - {t: Q, h: LEFT ALT}
+  - Q
   - W
   - E
   - R
@@ -39,16 +39,16 @@ layers:
   - {t: RIGHT GUI, h: num}
   LDT_:
   - ESCAPE
+  - Ctl+W
   - ''
   - ''
-  - ''
-  - ''
+  - Ctl+T
   - AC REDO
   - AC PASTE
   - Ctl+AC COPY
   - AC CUT
   - AC UNDO
-  - ''
+  - AltGr+TAB
   - ''
   - LCTRL
   - LEFT ALT
@@ -59,7 +59,7 @@ layers:
   - UP ARROW
   - RIGHT
   - ''
-  - ''
+  - Ctl+X
   - Ctl+C
   - Ctl+V
   - ''
