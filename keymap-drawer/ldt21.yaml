@@ -11,10 +11,10 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - '&hmr_gui'
+  - '&hmr_ctrl'
+  - '&hmr_alt'
+  - '&hmr_shift'
   - G
   - H
   - J
