@@ -169,19 +169,19 @@ path.combo {
 </g>
 <g transform="translate(28, 112)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;hmr_gui</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;hml_shift</tspan></text>
 </g>
 <g transform="translate(84, 98)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;hmr_ctrl</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;hml_alt</tspan></text>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;hmr_alt</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;hml_ctrl</tspan></text>
 </g>
 <g transform="translate(196, 98)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;hmr_shift</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;hml_gui</tspan></text>
 </g>
 <g transform="translate(252, 112)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
