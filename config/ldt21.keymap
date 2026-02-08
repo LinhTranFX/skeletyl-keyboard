@@ -48,7 +48,7 @@
 
         ldt21_layer {
             bindings = <
-&mt LEFT_ALT Q    &kp W  &kp E                &kp R            &kp T      &kp Y        &kp U      &kp I            &kp O    &kp P
+&kp Q             &kp W  &kp E                &kp R            &kp T      &kp Y        &kp U      &kp I            &kp O    &kp P
 &kp A             &kp S  &kp D                &kp F            &kp G      &kp H        &kp J      &kp K            &kp L    &mt RCTRL SEMICOLON
 &mt LEFT_SHIFT Z  &kp X  &kp C                &kp V            &kp B      &kp N        &kp M      &kp COMMA        &kp DOT  &mt LEFT_SHIFT SLASH
                          &mt LEFT_GUI ESCAPE  &lt 1 BACKSPACE  &lt 2 TAB  &lt 4 ENTER  &kp SPACE  &lt 3 RIGHT_GUI
@@ -60,10 +60,10 @@
         nav {
             label = "LDT_";
             bindings = <
-&kp ESCAPE  &none  &none      &none         &none         &kp C_AC_REDO  &kp C_AC_PASTE  &kp LC(C_AC_COPY)  &kp C_AC_CUT  &kp C_AC_UNDO
-&none       &none  &kp LCTRL  &kp LEFT_ALT  &none         &kp CAPS       &kp LEFT_ARROW  &kp DOWN           &kp UP_ARROW  &kp RIGHT
-&none       &none  &kp LC(C)  &kp RC(V)     &none         &none          &kp HOME        &kp PAGE_DOWN      &kp PG_DN     &mt LEFT_SHIFT END
-                   &kp LCTRL  &none         &kp LEFT_WIN  &lt 2 ENTER    &kp SPACE       &kp ESCAPE
+&kp ESCAPE   &kp LC(W)  &none      &none         &kp LC(T)     &kp C_AC_REDO  &kp C_AC_PASTE  &kp LC(C_AC_COPY)  &kp C_AC_CUT  &kp C_AC_UNDO
+&kp RA(TAB)  &none      &kp LCTRL  &kp LEFT_ALT  &none         &kp CAPS       &kp LEFT_ARROW  &kp DOWN           &kp UP_ARROW  &kp RIGHT
+&none        &kp LC(X)  &kp LC(C)  &kp RC(V)     &none         &none          &kp HOME        &kp PAGE_DOWN      &kp PG_DN     &mt LEFT_SHIFT END
+                        &kp LCTRL  &none         &kp LEFT_WIN  &lt 2 ENTER    &kp SPACE       &kp ESCAPE
             >;
         };
 
