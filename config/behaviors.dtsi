@@ -1,84 +1,129 @@
 / {
     behaviors {
-        // Left hand homerow mods (ví dụ QWERTY-like cho Skeletyl 36 keys)
-        // Giả sử home row: A S D F (left), J K L ; (right)
-        // Mods: Shift - Alt - Ctrl - GUI (có thể swap tùy thích)
+        /*
+         * Home-row mods cho layout kiểu QWERTY
+         * Left hand : A S D F
+         * Right hand: J K L ;
+         *
+         * Quy ước:
+         *  - Tap  = ký tự
+         *  - Hold = modifier
+         */
+
+        /* ========= LEFT HAND ========= */
 
         hml_shift: homerow_left_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HML_SHIFT";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+
             flavor = "balanced";
-            tapping-term-ms = <280>;           // Lớn để tránh timeout
-            quick-tap-ms = <175>;              // Giúp repeat tap tốt
-            require-prior-idle-ms = <150>;     // Idle trước khi cho phép hold
-            hold-trigger-on-release;           // Trigger hold khi thả phím (rất quan trọng cho timeless)
-            // hold-trigger-key-positions = <...>;  // Nếu muốn chỉ cross-hand, add sau
-            bindings = <&kp LSHFT>, <&kp A>;   // Hold = Left Shift, Tap = A
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+
+            bindings = <&kp A &kp LSHFT>;
         };
 
         hml_alt: homerow_left_alt {
             compatible = "zmk,behavior-hold-tap";
             label = "HML_ALT";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&kp LALT>, <&kp S>;
+
+            bindings = <&kp S &kp LALT>;
         };
 
         hml_ctrl: homerow_left_ctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "HML_CTRL";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&kp LCTRL>, <&kp D>;
+
+            bindings = <&kp D &kp LCTRL>;
         };
 
         hml_gui: homerow_left_gui {
             compatible = "zmk,behavior-hold-tap";
             label = "HML_GUI";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&kp LGUI>, <&kp F>;
+
+            bindings = <&kp F &kp LGUI>;
         };
 
-        // Mirror cho right hand (J K L ;)
+        /* ========= RIGHT HAND ========= */
+
         hmr_shift: homerow_right_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_SHIFT";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&kp RSHFT>, <&kp SEMI>;  // ; hoặc ; (tùy layout)
+
+            bindings = <&kp SEMI &kp RSHFT>;
         };
 
-        // Tương tự cho hmr_alt (LAlt), hmr_ctrl (LCtrl), hmr_gui (LGui) trên J K L
-        // Ví dụ:
+        hmr_alt: homerow_right_alt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_ALT";
+            #binding-cells = <2>;
+
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+
+            bindings = <&kp L &kp RALT>;
+        };
+
+        hmr_ctrl: homerow_right_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR_CTRL";
+            #binding-cells = <2>;
+
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+
+            bindings = <&kp K &kp RCTRL>;
+        };
+
         hmr_gui: homerow_right_gui {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_GUI";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&kp LGUI>, <&kp J>;
+
+            bindings = <&kp J &kp RGUI>;
         };
-        // ... thêm cho K và L tương tự
     };
 };
