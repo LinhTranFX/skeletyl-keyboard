@@ -31,9 +31,9 @@ layers:
   - ','
   - .
   - {t: /, h: LEFT SHIFT}
-  - {t: TAB, h: LEFT GUI}
+  - {t: ESCAPE, h: LEFT GUI}
   - {t: BACKSPACE, h: LDT_}
-  - {t: ENTER, h: Number}
+  - {t: TAB, h: Number}
   - {t: ENTER, h: Snum}
   - SPACE
   - {t: RIGHT GUI, h: num}
@@ -60,8 +60,8 @@ layers:
   - RIGHT
   - ''
   - ''
-  - C
-  - V
+  - Ctl+C
+  - Ctl+V
   - ''
   - ''
   - HOME
